@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/design_patterns.iml" filepath="$PROJECT_DIR$/design_patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../report_jxl/report_jxl.iml" filepath="$PROJECT_DIR$/../report_jxl/report_jxl.iml" />
+    </modules>
+  </component>
+</project>
