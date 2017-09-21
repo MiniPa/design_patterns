@@ -16,10 +16,10 @@ public class AbstractFactory {
 }
 
 interface IProduct1 {
-  public void show();
+  void show();
 }
 interface IProduct2 {
-  public  void show();
+  void show();
 }
 class Product1 implements IProduct1 {
   public void show() {
@@ -33,8 +33,8 @@ class Product2 implements IProduct2 {
 }
 
 interface IFactory1 {
-  public IProduct1 createProduct1();
-  public IProduct2 createProduct2();
+  IProduct1 createProduct1();
+  IProduct2 createProduct2();
 }
 class Factory1 implements IFactory1 {
   public IProduct1 createProduct1() {
