@@ -4,7 +4,9 @@ import java.util.Stack;
 
 /**
  * Description: 解释器 Parser
- * 此种模式缺陷比较多: 容易引起类膨胀,递归性能也不是很好
+ * 1.此种模式缺陷比较多: 容易引起类膨胀,递归性能也不是很好
+ *
+ *
  * Created by Chengjs on 2017/4/17 @version 1.0.
  */
 public class ParserClient {

@@ -2,6 +2,10 @@ package behavior;
 
 /**
  * Description: 策略模式 Strategy
+ *
+ * 1.和命令模式非常像,将具体操作封装在策略中,由上下文具体决定执行何种策略,感觉和命令模式一般无二
+ * 2.都是对行为和动作的封装,感觉和函数一样,勾引不了我使用的兴趣 -- 不就是封装么?
+ *
  * Created by Chengjs on 2017/4/17 @version 1.0.
  */
 public class StrategyClient {

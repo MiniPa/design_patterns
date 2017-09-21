@@ -4,24 +4,39 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Description: 享元模式 FlyWeight
+ * Description: 享元模式 FlyWeight, "租借工厂"--创建并借出对象
+ * 1.此例中相同参数从工厂中拿出来的对象是相同的,节约了资源. 同时也会产生问题
+ * 2.暂时想不出来什么情况下能用到
+ *
+ *
+ * <p>
  * Created by Chengjs on 2017/4/20 @version 1.0.
  */
 public class FlyWeightClient {
   public static void main(String[] args) {
-  FlyWeight f1 = FlyWeightFactory.getFlyWeight("a");
+    FlyWeight f1 = FlyWeightFactory.getFlyWeight("a");
     f1.action(1);
-  FlyWeight f2 = FlyWeightFactory.getFlyWeight("a");
-    System.out.println(f1 == f2);
-  FlyWeight f3 = FlyWeightFactory.getFlyWeight("b");
+    FlyWeight f2 = FlyWeightFactory.getFlyWeight("a");
+    System.out.println(f1 == f2); //true
+    FlyWeight f3 = FlyWeightFactory.getFlyWeight("b");
     f3.action(2);
-    System.out.println(f1 == f3);
-  FlyWeight f4 = FlyWeightFactory.getFlyWeight("c");
+    System.out.println(f1 == f3); //false
+    FlyWeight f4 = FlyWeightFactory.getFlyWeight("c");
     f4.action(3);
-  FlyWeight f5 = FlyWeightFactory.getFlyWeight("d");
+    FlyWeight f5 = FlyWeightFactory.getFlyWeight("d");
     f5.action(4);
     System.out.println(FlyWeightFactory.getSize());
   }
+  /*
+    参数值:1
+    true
+    参数值:2
+    false
+    参数值:3
+    参数值:4
+    4
+   *  */
+
 }
 
 interface FlyWeight {
