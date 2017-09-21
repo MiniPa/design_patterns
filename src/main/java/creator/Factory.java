@@ -1,14 +1,17 @@
 package creator;
 
 /**
- * Description: 工厂模式
- * Created by Chengjs on 2017/4/17 @version 1.0.
- */
+ * Factory: 工厂模式(最常用) 一个具体的工厂与固定的产品耦合
+ *
+ * @author: <a href="mailto:chengjs@servyou.com.cn">chengjs</a>
+ * @version: 1.0.0, 2017-04-08
+ **/
 public class Factory implements IFactory {
   public IProduct createProduct() {
     return new Product();
   }
 }
+
 interface IFactory {
   IProduct createProduct();
 }
@@ -16,6 +19,7 @@ interface IFactory {
 interface IProduct {
   void productMethod();
 }
+
 class Product implements IProduct {
   public void productMethod() {
     System.out.println("产品");

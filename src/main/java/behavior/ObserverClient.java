@@ -4,6 +4,9 @@ import java.util.Vector;
 
 /**
  * Description: 观察者 Observer
+ * 可用在多响应的场景中,方便安排不同观察者
+ * 1.webbrowser里面响应链用的观察者
+ *
  * Created by Chengjs on 2017/4/17 @version 1.0.
  */
 public class ObserverClient {
@@ -19,6 +22,7 @@ public class ObserverClient {
 
 /*被观察者 Subject*/
 abstract class SubJect {
+  /*观察者引用*/
   private Vector<Observer> obs = new Vector<Observer>();
   public void attach(Observer obs) {
     this.obs.add(obs);

@@ -1,9 +1,12 @@
 package creator;
 
 /**
- * Description: 抽象工厂
- * Created by Chengjs on 2017/4/17 @version 1.0.
- */
+ * AbstractFactory: 抽象工厂,一个工厂创建不同的产品,但具体工厂和具体的产品还是耦合的
+ *  感觉和Factory并没有什么实质区别,新增不同类型的产品还是需要修改Factory类
+ *
+ * @author: <a href="mailto:chengjs@servyou.com.cn">chengjs</a>
+ * @version: 1.0.0, 2017-03-08
+ **/
 public class AbstractFactory {
   public static void main(String[] args) {
     Factory1 factory = new Factory1();

@@ -2,6 +2,8 @@ package behavior;
 
 /**
  * Description: 中介模式 Mediator
+ * TODO 不知道好处在哪里,哪里可以使用到这种模式.
+ *
  * Created by Chengjs on 2017/4/17 @version 1.0.
  */
 public class MediatorClient {
@@ -35,6 +37,7 @@ class ColleagueA extends AbstractColleague {
     am.AaffectB();
   }
 }
+
 class ColleagueB extends AbstractColleague {
   public void setNum(int num, AbstractMediator am) {
     this.num = num;
@@ -52,6 +55,7 @@ abstract class AbstractMediator {
   public abstract void AaffectB();
   public abstract void BaffectA();
 }
+
 class Mediator extends AbstractMediator {
   public Mediator(AbstractColleague a, AbstractColleague b) {
     super(a, b);

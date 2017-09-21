@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Description: 原型模式 需要 deep clone()
+ *  适用于大的对象,特殊情况下使用。
  * Created by Chengjs on 2017/4/17 @version 1.0.
  */
 public class Prototype implements Cloneable {

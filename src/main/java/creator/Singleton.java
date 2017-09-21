@@ -28,6 +28,7 @@ class HungrySingleton {
 
 /**
  * Description: 单例模式 凯哥式样
+ * ==> 建议使用,但是还存在bug，不记得是哪篇blog中提到的了
  */
 class KaigeSingleton {
   private static KaigeSingleton kaigeSingleton;

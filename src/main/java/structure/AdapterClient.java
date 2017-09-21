@@ -1,12 +1,12 @@
 package structure;
 
 /**
- * Description: 适配器 Adapter
- *
+ * AdapterClient: 适配器 Adapter
  * 改变类的接口以适应不同接口兼容性问题
  *
- * Created by Chengjs on 2017/4/20 @version 1.0.
- */
+ * @author: <a href="mailto:chengjs@servyou.com.cn">chengjs</a>
+ * @version: 1.0.0, 2017-04-08
+ **/
 public class AdapterClient {
   public static void main(String[] args) {
     Target target = new Adapter(new Adaptee());

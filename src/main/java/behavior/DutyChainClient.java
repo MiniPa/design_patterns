@@ -2,6 +2,12 @@ package behavior;
 
 /**
  * Description: 责任链 DutyChain
+ * 1.臆想的替代方案：不同等级的请求,在实际操作中用if判断然后分别调用不同的handler来处理
+ *   不也非常方便么.
+ * 2.在责任链条环节非常多,数量和顺序经常变动. 以及链条传递条件复杂情况下,普通的if判断形式将会导致代码非常复杂,
+ *   不容易变动,此时使用责任链还是比较适合的。
+ * 3.注意：普通的业务逻辑使用简单条件判断即可,责任链在判断逻辑,和流程处理上边进行了易于扩展的处理
+ *
  * Created by Chengjs on 2017/4/17 @version 1.0.
  */
 public class DutyChainClient {
@@ -12,7 +18,7 @@ public class DutyChainClient {
     /*设置处理器等级链接*/
     h1.setNextHandler(h2);
     h2.setNextHandler(h3);
-    Response response = h1.hanleRequest(new Request(new Level(2)));
+    Response response = h1.hanleRequest(new Request(new Level(3)));
   }
 }
 

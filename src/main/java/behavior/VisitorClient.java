@@ -33,7 +33,8 @@ class Visitor implements IVisitor {
   public void visit(ConcreteElement1 el1) {
     el1.doSomething();
     System.out.println("visitor of el1 doSomething");
-    /*访问者让被访问的元素干活, && 元素中封装在访问者中的操作 -------------- 关键点*/
+    /*访问者让被访问的元素干活, && 元素中封装在访问者中的操作
+      这里可以对被访问的元素增添操作-------------- 关键点*/
   }
   public void visit(ConcreteElement2 el2) {
     el2.doSomething();

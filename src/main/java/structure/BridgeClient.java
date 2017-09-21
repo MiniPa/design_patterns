@@ -5,7 +5,7 @@ package structure;
  *
  * 抽象部分和实现部分进行分离,可以独立变化
  * 1.
- *
+ * 2.
  * Created by Chengjs on 2017/4/20 @version 1.0.
  */
 public class BridgeClient {
@@ -58,16 +58,14 @@ abstract class Person {
 
   public abstract void dress();
 
-  public Clothing getClothing() {
-    return clothing;
-  }
-
   /**
-   * 此处使用工厂方法来提供Clothing对象,避免产生人对衣服的强依赖关系
+   * 工厂方法来提供Clothing对象,避免产生人对衣服的强依赖关系
    */
   public void setClothing() {
     this.clothing = ClothingFactory.getClothing();
   }
+
+  public Clothing getClothing() { return clothing; }
 
   public String getType() {
     return type;
