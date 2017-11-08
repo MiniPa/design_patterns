@@ -1,20 +1,20 @@
 package structure;
 
 /**
- * Description: 外观模式 Facede
+ * Description: 外观模式 Facade
  *
  * 为子系统中一组接口提供一致的界面facede高层接口,增加系统易用性
  *
  * Created by Chengjs on 2017/4/20 @version 1.0.
  */
-public class FacedeClient {
+public class FacadeClient {
   public static void main(String[] args) {
     ServiceA sa = new ServiceAImpl();
-    ServiceB sb = new ServiceBImol();
+    ServiceB sb = new ServiceBImpl();
     sa.methodA();
     sb.mehtodB();
     System.out.println("================");
-    Facede facede = new Facede();
+    Facade facede = new Facade();
     facede.methodA();
     facede.methodB();
   }
@@ -23,14 +23,14 @@ public class FacedeClient {
 /**
  * 定义一个高级的接口/类
  */
-class Facede {
+class Facade {
   ServiceA sa;
   ServiceB sb;
   ServiceC sc;
 
-  public Facede() {
+  public Facade() {
     this.sa = new ServiceAImpl();
-    this.sb = new ServiceBImol();
+    this.sb = new ServiceBImpl();
     this.sc = new ServiceCImpl();
   }
 
@@ -67,7 +67,7 @@ class ServiceAImpl implements ServiceA {
   }
 }
 
-class ServiceBImol implements ServiceB {
+class ServiceBImpl implements ServiceB {
 
   public void mehtodB() {
     System.out.println("这里是服务B");

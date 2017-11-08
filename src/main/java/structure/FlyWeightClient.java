@@ -5,11 +5,15 @@ import java.util.Map;
 
 /**
  * Description: 享元模式 FlyWeight, "租借工厂"--创建并借出对象
+ * 通过共享对象减少系统中低等级的详细的对象数目
+ *
  * 1.此例中相同参数从工厂中拿出来的对象是相同的,节约了资源. 同时也会产生问题
- * 2.暂时想不出来什么情况下能用到
  *
+ * 适用性:
+ * 1.应用程序使用大量的对象
+ * 2.对象数量巨大导致很高的存储开销
+ * 3.程序不依赖于对象的身份
  *
- * <p>
  * Created by Chengjs on 2017/4/20 @version 1.0.
  */
 public class FlyWeightClient {
