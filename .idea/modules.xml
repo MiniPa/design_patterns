@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/design_patterns.iml" filepath="$PROJECT_DIR$/design_patterns.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../report_jxl/report_jxl.iml" filepath="$PROJECT_DIR$/../report_jxl/report_jxl.iml" />
+      <module fileurl="file://E:\ProjectsSvy\report_jxl\report_jxl.iml" filepath="E:\ProjectsSvy\report_jxl\report_jxl.iml" />
     </modules>
   </component>
 </project>
