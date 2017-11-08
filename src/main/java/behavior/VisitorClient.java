@@ -6,6 +6,12 @@ import java.util.Random;
 
 /**
  * Description: 访问者 Visitor
+ * 提供一种方便的,可维护的方法来表示在对象结构元素上要进行的操作.
+ * 允许在不改变操作元素类的前提下定义一个新的操作
+ *
+ * 适用性:
+ * 对象结构包含许多具有不同接口的对象类
+ * 定义对象结构的类很少修改,但要在此结构上定义新的操作
  *
  * 封装易变操作到visitor中去
  * abstract visitor define which elements can be visited -- difficult to add new elements
