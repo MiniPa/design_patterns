@@ -3,7 +3,7 @@
  * Erich Gamma，Richard Helm，Ralph Johnson和John Vlissides 《设计模式 - 可重用的面向对象软件元素》
  *
  - 项目内容：
- - 6大原则 package: principle
+ - 6大原则 package: dp.principle
  1. 单一职责原则 -- 类
  2. 里氏替换原则 -- 继承
  3. 依赖倒置原则 -- 接口 分层
@@ -11,14 +11,14 @@
  5. 迪米特法则 -- 耦合
  6. 开闭原则 -- 修改&扩展
 
- - 创建模型 package: creator
+ - 创建模型 package: designmodel.dp.behavior.dp.creator
  1. 单例模式 -- 单个对象
  2. 工厂方法模式 -- 多个对象 ?
  3. 抽象工厂模式 -- 多对象组 ?
  4. 建造者模式 -- 组装对象 ?
  5. 原型模式 -- clone()
 
- - 行为模式 package: behavior
+ - 行为模式 package: designmodel.dp.behavior
  1. 模板方法模式  -- 钩子方法 (抽象规则,操作延迟到子类)
  2. 中介者模式 -- 散射模型 (???)
  3. 观察者模式 -- 监听者模式 联动 (一动则都动)
@@ -31,7 +31,7 @@
  10. 备忘录模式 -- 日志记录
  11. 状态模式 -- 依赖联动 ？
 
- - 结构型模式 package: structure
+ - 结构型模式 package: dp.structure
  1. 适配器模式 -- 兼容接口
  2. 桥接模式 -- 抽象/现实 ？
  3. 组合模式 -- 整体部分操作统一
